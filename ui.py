@@ -44,7 +44,7 @@ class QuizInterface:
         else:
             self.score_label.config(text=f"Score: {self.quiz.score}")
             self.canvas.itemconfig(self.question_text, text=f"Quiz Completed"
-                                                            f"\nYour total score is: {self.quiz.score}")
+                                                            f"\nYour total score is: {self.quiz.score} out of 10")
             self.true_button.config(state="disabled")
             self.false_button.config(state="disabled")
     def true_pressed(self):
